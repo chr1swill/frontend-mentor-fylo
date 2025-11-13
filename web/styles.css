@@ -1,8 +1,8 @@
 *::before,
 *::after,
-* {
-	box-sizing: border-box;
-	margin: 0px 0px;
+* { box-sizing: border-box; margin: 0px 0px; }
+:root {
+	--clr-bg-curve: #181f2b;
 }
-
 body { background: black; }
+.bg-curve { fill: var(--clr-bg-curve); fill-opacity: 1 }
