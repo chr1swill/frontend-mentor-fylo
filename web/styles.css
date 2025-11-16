@@ -29,7 +29,7 @@ a { color: inherit; }
 }
 .foreground header nav { display: flex; gap: 32px; }
 .foreground header nav img {
-	aspect-ratio: 176/51.05;
+	/*aspect-ratio: 176/51.05;*/
 	max-width: 176px;
 	max-height: 51.05px;
 }
