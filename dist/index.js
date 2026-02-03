@@ -2,7 +2,7 @@ import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
 const app = new Hono();
 app.get('/', (c) => {
-    return c.text('Hello Hono!');
+    return c.html('Hello Hono!');
 });
 serve({
     fetch: app.fetch,
