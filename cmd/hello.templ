@@ -1,5 +1,15 @@
 package main
 
 templ Hello(name string) {
-	<div>Hello, { name }</div>
+	<button>Hire Me '{ name }'</button>
+}
+
+templ LandingPage(name string) {
+	<html>
+	  <head>
+		</head>
+		<body>
+		@Hello(name)
+		</body>
+	</html>
 }

@@ -2,6 +2,7 @@ package main
 
 import (
   "context"
+	"net/http"
 	"fmt"
 	"log"
 	"os"
@@ -23,8 +24,16 @@ func main() {
 	}
 	defer f.Close();
 
-	err = Hello("John").Render(context.Background(), f);
-	if err != nil {
-		log.Fatalf("failed to write output file: %v", err);
+  mux := http.NewServeMux();
+	mux.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
+			err = LandingPage("John").Render(context.Background(), w);
+			if err != nil {
+			  log.Fatalf("failed to write output file: %v", err);
+			}
+	});
+
+  log.Printf("serve starting on port :8080...");
+	if err := http.ListenAndServe(":8080", mux);err != nil {
+			log.Fatalf("failed to listen and serve on :8080 : %v", err);
 	}
 }
