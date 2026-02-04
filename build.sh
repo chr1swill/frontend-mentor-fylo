@@ -2,9 +2,6 @@
 
 set -xe
 
-cd cmd
-
+mkdir -p bin
 go tool templ generate
-go run .
-
-cd ..
+go build -o bin/main ./cmd
