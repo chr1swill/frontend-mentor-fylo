@@ -8,7 +8,10 @@ import (
 
 func main() {
   mux := http.NewServeMux();
-	mux.Handle("/", templ.Handler(LandingPage("Baby")));
+	fs := http.FileServer(http.Dir("./static"));
+
+	mux.Handle("/static/", http.StripPrefix("/static/", fs));
+	mux.Handle("/", templ.Handler(HomePage()));
 
   log.Printf("serve starting on port :8080...");
 	if err := http.ListenAndServe(":8080", mux);err != nil {

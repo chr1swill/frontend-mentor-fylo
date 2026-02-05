@@ -1,0 +1,32 @@
+*::before,*::after,*{box-sizing: border-box; margin: 0px 0px;}
+:root {
+	--clr-bg-curve: #181f2b;
+	--clr-bg-fill: rgba(28, 34, 48, 1);
+	--clr-text: white;
+	--ff-title: "Raleway", sans-serif;
+	--ff-body: "Open Sans", sans-serif;
+}
+
+body {
+	background-color: var(--clr-bg-fill);
+	color: var(--clr-text);
+	font-family: var(--ff-body);
+	padding: 16px 16px;
+}
+
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.no-bullets {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav, ul {
+	gap: 4px;
+	font-size: 18px;
+}
