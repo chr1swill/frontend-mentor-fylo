@@ -1,15 +1,16 @@
 package main
 
-templ Hello(name string) {
-	<button>Hire Me '{ name }'</button>
-}
-
 templ LandingPage(name string) {
+	<!doctype html>
 	<html>
 	  <head>
+	    <style>
+			  body{background-color: blue; color: grey;}
+				button{background-color: grey; colour: blue;}
+			</style>
+			<meta name="viewport" content="width=device-width, initial-scale=1" >		  <title>Nice to meet your { name }</title>
 		</head>
 		<body>
-		@Hello(name)
 		</body>
 	</html>
 }
