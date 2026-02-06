@@ -20,6 +20,10 @@ body {
 	padding: 16px 16px;
 }
 
+body > *:not(:first-child) {
+	margin: 0px 0px 128px 0px;
+}
+
 .flex-between {
 	display: flex;
 	justify-content: space-between;
