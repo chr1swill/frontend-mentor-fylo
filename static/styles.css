@@ -38,11 +38,11 @@ nav { padding: 1%; }
 
 nav, ul {
 	gap: 8px;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 nav ul a {
-	white-space: is example, each div inside the .container will have a margin-bottom of 20px. If you want to apply this to all descendant nowrap;
+	white-space: nowrap;
 	text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ body article:nth-of-type(1) h1 {
 
 body article:nth-of-type(1) p {
 	font-family: var(--ff-body); 
-	font-size:12px;
+	font-size:14px;
 }
 
 article form button[type="submit"] {
@@ -70,5 +70,6 @@ article form button[type="submit"] {
 	color: var(--clr-text);
 	padding: 8px 16px;
 	font-weight: bold;
+	font-size: 15px;
   border-radius: 25px;
 }
