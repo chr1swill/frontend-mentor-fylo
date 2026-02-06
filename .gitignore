@@ -29,3 +29,6 @@ lerna-debug.log*
 
 # vim
 *.swp
+
+#out
+bin/*
