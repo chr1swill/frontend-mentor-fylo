@@ -7,6 +7,11 @@
 	--ff-body: "Open Sans", sans-serif;
 }
 
+html, body {
+	width: 100%;
+  height: 100%;
+}
+
 body {
 	background-color: var(--clr-bg-fill);
 	color: var(--clr-text);
@@ -26,7 +31,17 @@ body {
 	margin: 0;
 }
 
+a { color: inherit; }
+
+nav { padding: 1%; }
+
 nav, ul {
-	gap: 4px;
+	gap: 8px;
 	font-size: 18px;
+}
+
+nav ul a {
+	font-size: 14px;
+	white-space: nowrap;
+	text-decoration: none;
 }
