@@ -2,6 +2,7 @@
 :root {
 	--clr-bg-curve: #181f2b;
 	--clr-bg-fill: rgba(28, 34, 48, 1);
+	--clr-cta: rgba(79, 196, 213, 1);
 	--clr-text: white;
 	--ff-title: "Raleway", sans-serif;
 	--ff-body: "Open Sans", sans-serif;
@@ -37,11 +38,37 @@ nav { padding: 1%; }
 
 nav, ul {
 	gap: 8px;
-	font-size: 18px;
+	font-size: 10px;
 }
 
 nav ul a {
-	font-size: 14px;
-	white-space: nowrap;
+	white-space: is example, each div inside the .container will have a margin-bottom of 20px. If you want to apply this to all descendant nowrap;
 	text-decoration: none;
+}
+
+body article:nth-of-type(1) {
+	text-align: center;
+}
+
+body article:nth-of-type(1) > * {
+	margin: 0px 0px 16px 0px;
+}
+
+body article:nth-of-type(1) h1 {
+	font-family: var(--ff-title); 
+	font-size: 23px;
+}
+
+body article:nth-of-type(1) p {
+	font-family: var(--ff-body); 
+	font-size:12px;
+}
+
+article form button[type="submit"] {
+	border: none;
+	background-color: var(--clr-cta);
+	color: var(--clr-text);
+	padding: 8px 16px;
+	font-weight: bold;
+  border-radius: 25px;
 }

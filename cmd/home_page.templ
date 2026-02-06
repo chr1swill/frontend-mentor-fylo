@@ -15,13 +15,22 @@ templ HomePage() {
 		</head>
 		<body>
 		  <nav class="flex-between">
-			  <img width="100px" height="" egar src="/static/images/logo.svg">
+			  <img width="100px" height="" loading="earger" src="/static/images/logo.svg">
 				<ul class="flex-between no-bullets">
 				  <li><a href="#">Features</a></li>
 				  <li><a href="#">Team</a></li>
 				  <li><a href="#">Sign in</a></li>
 				</ul>
 			</nav>
+			<article>
+			  <img width="100%" height="" loading="earger" src="./static/images/illustration-intro.png"
+				>
+				<h1>All your files in one secure location, accessible anywhere.</h1>
+				<p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collabroate with firends, family, and co-workers.</p>
+				<form method="get" action="/get-started">
+				  <button type="submit">Get Started</button>
+			  </form>
+			</article>
 		</body>
 	</html>
 }
