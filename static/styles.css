@@ -13,14 +13,22 @@ html, body {
   height: 100%;
 }
 
-h1,h2,h3,h4,h5,h6 { font-family: var(--ff-title); }
-
 body {
 	background-color: var(--clr-bg-fill);
 	color: var(--clr-text);
 	font-family: var(--ff-body);
 	font-size: 16px;
 	padding: 16px 16px;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: var(--ff-title); }
+
+a { color: inherit; }
+
+nav { padding: 1%; }
+
+button[type="submit"]:hover {
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 30%);
 }
 
 body > *:not(:first-child) {
@@ -39,10 +47,6 @@ body > *:not(:first-child) {
 	margin: 0;
 }
 
-a { color: inherit; }
-
-nav { padding: 1%; }
-
 nav > ul {
 	gap: 8px;
 	font-size: 12px;
@@ -53,26 +57,25 @@ nav ul a {
 	text-decoration: none;
 }
 
-body article:nth-of-type(1) {
+.hero {
 	text-align: center;
 }
 
-body article:nth-of-type(1) > * {
+.hero > * {
 	margin: 0px 0px 16px 0px;
 }
 
-body article:nth-of-type(1) h1 {
-	font-family: var(--ff-title); 
+.hero > h1 {
 	font-size: 26px;
 	margin: 0px 0px 8px 0px;
 }
 
-body article:nth-of-type(1) p {
+.hero > p {
 	font-family: var(--ff-body); 
 	font-size:14px;
 }
 
-article form button[type="submit"] {
+.hero form > button[type="submit"] {
 	border: none;
 	background-color: var(--clr-cta);
 	color: var(--clr-text);
@@ -80,10 +83,6 @@ article form button[type="submit"] {
 	font-weight: bold;
 	font-size: 15px;
   border-radius: 25px;
-}
-
-button[type="submit"]:hover {
-	box-shadow: 0px 4px 16px rgba(0, 0, 0, 30%);
 }
 
 .feature_card_container {
@@ -95,5 +94,5 @@ button[type="submit"]:hover {
 }
 
 .feature_card_container h2 {
-	font-size: 24px;
+	font-size: 19px;
 }
