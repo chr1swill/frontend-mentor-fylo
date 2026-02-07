@@ -87,13 +87,23 @@ nav ul a {
 }
 
 .feature_card_container {
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 16px;
+	gap: 32px;
+}
+
+.feature_card_container img {
+	margin: 0px 0px 16px 0px;
 }
 
 .feature_card_container h2 {
 	font-size: 19px;
+	margin: 0px 0px 8px 0px;
+}
+
+.feature_card_container p {
+	font-size: 15px;
 }
