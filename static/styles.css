@@ -107,3 +107,22 @@ nav ul a {
 .feature_card_container p {
 	font-size: 15px;
 }
+
+.stay_productive_container > img {
+	margin: 0px 0px 16px 0px;
+}
+
+.stay_productive_container > h2 {
+	font-size: 21px;
+	margin: 0px 0px 8px 0px;
+}
+
+.stay_productive_container > p {
+	margin: 0px 0px 8px 0px;
+	font-size: 15px;
+}
+
+.stay_productive_container button {
+	background-color: none;
+	border: none;
+}
