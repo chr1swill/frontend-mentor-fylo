@@ -86,5 +86,4 @@ button[type="submit"]:hover {
 body:nth-child(2) {
 	display: flex;
 	flex-direction: column;
-	gap: 64px 0px;
 }
