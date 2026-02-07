@@ -40,7 +40,7 @@ a { color: inherit; }
 
 nav { padding: 1%; }
 
-nav, ul {
+nav > ul {
 	gap: 8px;
 	font-size: 12px;
 }
@@ -83,7 +83,10 @@ button[type="submit"]:hover {
 	box-shadow: 0px 4px 16px rgba(0, 0, 0, 30%);
 }
 
-body:nth-child(2) {
+.feature_card_container {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
 }
