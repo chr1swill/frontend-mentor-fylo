@@ -58,6 +58,7 @@ nav ul a {
 }
 
 .hero {
+	align-items: center;
 	text-align: center;
 }
 
@@ -75,7 +76,7 @@ nav ul a {
 	font-size:14px;
 }
 
-.hero form > button[type="submit"] {
+.hero > form > button[type="submit"] {
 	border: none;
 	background-color: var(--clr-cta);
 	color: var(--clr-text);
