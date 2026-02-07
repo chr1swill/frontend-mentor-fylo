@@ -27,10 +27,6 @@ a { color: inherit; }
 
 nav { padding: 1%; }
 
-button[type="submit"]:hover {
-	box-shadow: 0px 4px 16px rgba(0, 0, 0, 30%);
-}
-
 body > *:not(:first-child) {
 	margin: 0px 0px 96px 0px;
 }
@@ -86,6 +82,10 @@ nav ul a {
   border-radius: 25px;
 }
 
+.hero > form > button[type="submit"]:hover {
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 30%);
+}
+
 .feature_card_container {
 	text-align: center;
 	display: flex;
@@ -122,7 +122,7 @@ nav ul a {
 	font-size: 15px;
 }
 
-.stay_productive_container button {
-	background-color: none;
+.stay_productive_container > form > button[type="submit"] {
+	background-color: pink;
 	border: none;
 }
