@@ -21,7 +21,7 @@ body {
 }
 
 body > *:not(:first-child) {
-	margin: 0px 0px 64px 0px;
+	margin: 0px 0px 96px 0px;
 }
 
 .flex-between {
