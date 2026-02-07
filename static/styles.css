@@ -13,6 +13,8 @@ html, body {
   height: 100%;
 }
 
+h1,h2,h3,h4,h5,h6 { font-family: var(--ff-title); }
+
 body {
 	background-color: var(--clr-bg-fill);
 	color: var(--clr-text);
@@ -89,4 +91,7 @@ button[type="submit"]:hover {
 	justify-content: center;
 	align-items: center;
 	gap: 16px;
+}
+
+.feature_card_container h2 {
 }
