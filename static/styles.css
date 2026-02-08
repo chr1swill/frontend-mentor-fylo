@@ -123,6 +123,19 @@ nav ul a {
 }
 
 .stay_productive_container > form > button[type="submit"] {
-	background-color: pink;
 	border: none;
+	border-bottom: 2px solid var(--clr-cta);
+	background-color: rgba(0,0,0,0);
+	color: var(--clr-cta);
+	font-size: 15px;
+	text-align: left;
+	padding: 0px 0px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2px;
+}
+
+.stay_productive_container > form > button[type="submit"]:hover {
+	font-weight: bold;
 }
