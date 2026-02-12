@@ -30,5 +30,7 @@ lerna-debug.log*
 # vim
 *.swp
 
-#out
+# out
 bin/*
+
+cmd/**/*_templ.go
